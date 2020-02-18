@@ -1,3 +1,17 @@
+## About
+
+A bug tracker web app that allows users to keep track of their coding projects. Users can create accounts or Demo accounts. The types of accounts allowed are 'Admin', 'Project Manager', 'Developer' and 'Submitter'.
+Users can access / delete their notifications and set custom profile pictures.
+Tickets can have files / media attached to them as well as comments. Tickets have a history section of all relevent changed made to the ticket.
+Projects are the projects at hand and tickets are the issues on the projects.
+An Admin account can create/delete projects, tickets on projects, assign roles to users, users to projects and has access to all projects and tickets in the database.
+A Project manager can create / delete projects and has access to all projects and tickets in the database.
+A developer can be assigned to projects as a developer
+A submitter can create tickets on projects
+All accounts can be assigned as 'users' on a project.
+Notifications are tiggerred by user actions and made available to the users to keep users updated on the actions taken on tickets / projects they are associated with.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
