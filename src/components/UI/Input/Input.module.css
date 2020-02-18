@@ -1,0 +1,80 @@
+.Input {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 56px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(232, 240, 254) !important;
+}
+
+.Input:focus {
+  border: 2px solid blue;
+}
+
+.Label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.InputElement {
+  outline: none;
+  border: none;
+  font: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: none;
+  font-size: 16px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.InputElement:focus {
+  outline: none;
+  background: none;
+  border: 2px solid #97d2d5;
+}
+
+.Invalid {
+  background-color: #fda49a;
+}
+
+.Placeholder {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  padding: 1.5px 5px;
+  color: #ffc491;
+  font: 400 14px Roboto, sans-serif;
+}
+
+@media (max-width: 499px) {
+  .Input {
+    height: 36px;
+  }
+  .InputElement {
+    font-size: 13px;
+  }
+  .Placeholder {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,261 @@
+.personnel-div {
+  padding: 0 10px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.personnel-header {
+  width: 100%;
+  /* background: #ffc491; */
+  background-image: linear-gradient(to top right, #ffc491, #f3a25b);
+
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  margin-top: -3%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.personnel-header h3,
+.personnel-header p {
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.personnel-div .search-form {
+  margin: 10px auto;
+  margin-right: 0;
+}
+
+.personnel-div .search-form ion-icon {
+  padding: 5px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.users-grid-head,
+.users-grid-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-transform: capitalize;
+  color: #464646;
+}
+
+.users-grid-head.tickets,
+.users-grid-list.tickets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr 1fr 0.5fr;
+  text-transform: capitalize;
+  color: #464646;
+}
+
+.users-grid-head.history,
+.users-grid-list.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-transform: capitalize;
+  color: #464646;
+}
+
+.users-grid-head.users,
+.users-grid-list.users {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  text-transform: capitalize;
+  color: #464646;
+}
+
+.users-grid-head.profile,
+.users-grid-list.profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 0.5fr;
+  text-transform: capitalize;
+  color: #464646;
+}
+
+.users-grid-head.files,
+.users-grid-list.files {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+  text-transform: capitalize;
+  color: #464646;
+}
+
+.users-grid-names,
+.users-grid-emails,
+.users-grid-roles {
+  border-bottom: 1px solid #464646;
+  padding: 5px 0;
+  color: #464646;
+  font-weight: 600;
+}
+.user-list-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px 10px 0px;
+}
+.user-list-item.details {
+  list-style: none;
+}
+
+.project-options:first-of-type {
+  margin-bottom: 5px;
+}
+
+.project-options {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.project-options:hover {
+  transition: 0.3s ease-in;
+  color: #64acaf;
+  text-decoration: underline #64acaf;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+}
+
+.users-grid-names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personnel-div ion-icon:hover {
+  cursor: pointer;
+  color: #ffd7b5;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.users-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(70, 70, 70);
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.pagination-controls {
+  width: 25%;
+  min-width: 200px;
+  display: flex;
+}
+
+.pagination-controls .button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #64acaf;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin: auto;
+}
+
+.pagination-controls .button:hover {
+  opacity: 0.8;
+}
+
+.pagination-controls .page {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.pagination-controls .page.current {
+  background-color: #ccc;
+}
+
+@media (max-width: 999px) {
+  .user-list-item.fold,
+  .users-grid-roles.fold,
+  .users-grid-roles.tickets {
+    display: none;
+  }
+  .users-grid-head.tickets,
+  .users-grid-list.tickets {
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }
+}
+
+.user-list-item.email {
+  text-transform: none;
+}
+
+@media (max-width: 799px) {
+  .users-grid-head,
+  .users-grid-list,
+  .users-grid-head.tickets,
+  .users-grid-list.tickets {
+    grid-template-columns: 1fr 1fr;
+  }
+  .user-list-item.two {
+    display: none;
+  }
+  .users-grid-emails,
+  .users-grid-emails.tickets {
+    display: none;
+  }
+  .user-list-item.tickets {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  .user-list-item.two {
+    display: block;
+  }
+  .users-grid-emails {
+    display: block;
+  }
+  .users-grid-head,
+  .users-grid-list {
+    grid-template-columns: 1fr 2fr 1fr;
+    font-size: 12px;
+  }
+
+  .users-pagination {
+    font-size: 12px;
+  }
+}

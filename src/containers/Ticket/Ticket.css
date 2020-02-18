@@ -1,0 +1,198 @@
+.Ticket {
+  padding: 70px 30px 30px 30px;
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Ticket.edit {
+  display: block;
+  padding: 30px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.Ticket.edit .create-error {
+  margin-bottom: 20px;
+}
+
+.ticket-column-one,
+.ticket-column-two {
+  display: grid;
+  grid-template-rows: fit-content(1000px) fit-content(1000px);
+}
+
+.ticket-column-one {
+  border-right: 0.25px solid #ccc;
+  padding-right: 10px;
+}
+
+.ticket-column-two {
+  border-left: 0.25px solid #ccc;
+  padding-left: 10px;
+}
+
+.ticket-column-one .personnel-div {
+  margin-bottom: 20px;
+}
+
+.ticket-comments {
+  padding-bottom: 20px;
+}
+
+.ticket-history,
+.ticket-attachments {
+  border-top: 0.25px solid #ccc;
+  padding-top: 20px;
+}
+
+.unique-ticket-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+}
+
+.unique-ticket-details.two,
+.unique-ticket-details.three,
+.unique-ticket-details.four,
+.unique-ticket-details.five {
+  border-top: 1px solid #ccc;
+}
+
+.unique-ticket.label {
+  color: #464646;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+.unique-ticket.property {
+  color: #7e7e7e;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.comment-form {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.attachment-form {
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+
+@font-face {
+  font-family: "Ionicons";
+  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");
+  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix")
+      format("embedded-opentype"),
+    url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1")
+      format("truetype"),
+    url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1")
+      format("woff"),
+    url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input {
+  max-width: 130px;
+  max-height: 60px;
+}
+.custom-file-input::before {
+  content: "\f40b    upload files";
+  color: rgb(70, 69, 69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 14pt;
+  font-family: "Ionicons";
+  max-width: 130px;
+  height: 60px;
+}
+.custom-file-input:focus {
+  outline: none;
+}
+
+.custom-file-input:hover {
+  z-index: 3;
+  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  -moz-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  -o-transform: scale(1.025);
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.comment-form button,
+.attachment-form button {
+  margin: 0;
+}
+
+.ticket-comments,
+.ticket-attachments h3 {
+  text-align: left;
+  color: #464646;
+}
+
+@media (max-width: 1399px) {
+  .Ticket {
+    grid-template-rows: fit-content(1000px) fit-content(1000px);
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .ticket-column-one {
+    padding-right: 0;
+  }
+  .ticket-comments {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .ticket-column-one,
+  .ticket-column-two {
+    padding: 0;
+    border: none;
+    row-gap: 30px;
+  }
+  .ticket-history,
+  .ticket-comments,
+  .ticket-attachments {
+    border: none;
+  }
+  .comment-form,
+  .attachment-form {
+    margin-bottom: 50px;
+  }
+}

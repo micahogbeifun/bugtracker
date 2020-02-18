@@ -1,0 +1,62 @@
+.ManageProfile {
+  padding: 70px 30px 30px 30px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.unique-ticket-details.user {
+  margin-bottom: 50px;
+}
+
+.custom-file-input-profile {
+  color: transparent;
+}
+.custom-file-input-profile::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input-profile {
+  max-height: 60px;
+}
+.custom-file-input-profile::before {
+  content: "change profile picture";
+  color: rgb(70, 69, 69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  text-align: center;
+  outline: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 12pt;
+  font-family: "Ionicons";
+  max-width: 130px;
+  height: 40px;
+}
+.custom-file-input-profile:focus {
+  outline: none;
+}
+
+.custom-file-input-profile:hover {
+  z-index: 3;
+  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  -moz-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  -o-transform: scale(1.025);
+}
+
+.custom-file-input-profile:hover::before {
+  border-color: black;
+}
+.custom-file-input-profile:active {
+  outline: 0;
+}
+.custom-file-input-profile:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}

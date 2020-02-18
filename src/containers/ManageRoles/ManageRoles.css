@@ -1,0 +1,30 @@
+.ManageRoles {
+  min-height: 100vh;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  position: relative;
+  padding-top: 100px;
+}
+
+.ManageRoles h1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: rgb(65, 65, 65);
+  font-weight: 500;
+}
+
+.selection-div {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 999px) {
+  .ManageRoles {
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,100 @@
+.ManageProjects {
+  padding: 30px;
+  padding-top: 50px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.projects-button {
+  max-width: 250px;
+}
+
+.project-edit-button {
+  max-width: 100px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.create-projects-button {
+  max-width: 250px;
+  margin-bottom: 50px;
+}
+
+.projects-button:last-child {
+  margin-bottom: 30px;
+}
+
+.project-action-buttons {
+  margin-top: 20px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  min-width: 250px;
+}
+
+.create-project {
+  margin: 30px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+}
+
+.create-project-form {
+  display: grid;
+  grid-auto-rows: 60px 100px;
+  grid-gap: 40px;
+}
+
+.create-error {
+  color: rgb(167, 40, 40);
+  margin-top: -30px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.personnel-header p span:first-child {
+  margin-right: 10px;
+}
+
+.personnel-header p span {
+  margin-bottom: 5px;
+  text-decoration: underline;
+  color: #464646;
+  cursor: pointer;
+}
+
+.personnel-header p span:hover {
+  transition: 0.1s ease-in;
+  -webkit-transition: 0.1s ease-in;
+  -moz-transition: 0.1s ease-in;
+  -ms-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  color: #64acaf;
+  text-decoration: underline #64acaf;
+}
+
+.personnel-div-details {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 20px;
+}
+
+.personnel-header-title.details {
+  margin: 50px 0;
+  color: #464646;
+}
+
+@media (max-width: 769px) {
+  .create-project {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1399px) {
+  .personnel-div-details {
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}

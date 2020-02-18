@@ -1,0 +1,40 @@
+.ManageTickets {
+  padding: 30px;
+  padding-top: 50px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.create-ticket {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+
+.ticket-details {
+  display: grid;
+  grid-template-rows: 60px 100 40px;
+}
+
+.ticket-admin {
+  display: grid;
+  grid-template-rows: 70px;
+  grid-auto-rows: 70px;
+  row-gap: 10px;
+}
+
+.ticket-select-label {
+  margin-bottom: 10px;
+  color: #464646;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+@media (max-width: 799px) {
+  .create-ticket {
+    grid-auto-flow: column;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+  }
+}
