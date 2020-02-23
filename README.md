@@ -1,8 +1,11 @@
 ## About
 
-A bug tracker web app that allows users to keep track of their coding projects. Users can create accounts or Demo accounts. The types of accounts allowed are 'Admin', 'Project Manager', 'Developer' and 'Submitter'.
+A bug tracker web app that allows users to keep track of their coding projects.
+Users can create accounts or Demo accounts. 
+The types of accounts allowed are 'Admin', 'Project Manager', 'Developer' and 'Submitter'.
 Users can access / delete their notifications and set custom profile pictures.
-Tickets can have files / media attached to them as well as comments. Tickets have a history section of all relevent changed made to the ticket.
+Tickets can have files / media attached to them as well as comments.
+Tickets have a history section of all relevent changed made to the ticket.
 Projects are the projects at hand and tickets are the issues on the projects.
 An Admin account can create/delete projects, tickets on projects, assign roles to users, users to projects and has access to all projects and tickets in the database.
 A Project manager can create / delete projects and has access to all projects and tickets in the database.
