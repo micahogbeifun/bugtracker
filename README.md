@@ -1,7 +1,7 @@
 ## About
 
-A bug tracker web-app that allows users to keep track of their coding projects.
-Users can create accounts or Demo accounts. 
+A bug tracker web-app that allows users to keep track of their coding projects.\n
+Users can create accounts or Demo accounts. \n
 The types of accounts allowed are 'Admin', 'Project Manager', 'Developer' and 'Submitter'.
 Users can access / delete their notifications and set custom profile pictures.
 Tickets can have files / media attached to them as well as comments.
