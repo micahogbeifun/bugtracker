@@ -202,7 +202,7 @@ class Login extends Component {
       >
         <div className="login-modal-div">
           <div className="logo-div">
-            <Logo />
+            <Logo className="disabled-link" />
           </div>
           <h1 className="login-modal-title">choose demo account</h1>
           <div
