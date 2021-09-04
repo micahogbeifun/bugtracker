@@ -1,5 +1,6 @@
 {
   "name": "bug-tracker",
+  "homepage": "bugtracker/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
