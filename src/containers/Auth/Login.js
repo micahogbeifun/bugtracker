@@ -202,13 +202,13 @@ class Login extends Component {
       >
         <div className="login-modal-div">
           <div className="logo-div">
-            <Logo className="disabled-link" />
+            <Logo noLink={true}/>
           </div>
           <h1 className="login-modal-title">choose demo account</h1>
           <div
             className="login-prop-user admin"
             onClick={() =>
-              this.props.auth("demo_admin_mail@mail.com", "waters")
+              !this.state.authModal ? null : this.props.auth("demo_admin_mail@mail.com", "waters")
             }
           >
             <ion-icon name="person"></ion-icon>
@@ -217,7 +217,7 @@ class Login extends Component {
           <div
             className="login-prop-user project-manager"
             onClick={() =>
-              this.props.auth("demo_proj_man_mail@mail.com", "waters")
+              !this.state.authModal ? null : this.props.auth("demo_proj_man_mail@mail.com", "waters")
             }
           >
             <ion-icon name="person"></ion-icon>
@@ -225,14 +225,14 @@ class Login extends Component {
           </div>
           <div
             className="login-prop-user developer"
-            onClick={() => this.props.auth("demo_dev_mail@mail.com", "waters")}
+            onClick={() => !this.state.authModal ? null : this.props.auth("demo_dev_mail@mail.com", "waters")}
           >
             <ion-icon name="person"></ion-icon>
             <p>developer</p>
           </div>
           <div
             className="login-prop-user submitter"
-            onClick={() => this.props.auth("demo_sub_mail@mail.com", "waters")}
+            onClick={() => !this.state.authModal ? null : this.props.auth("demo_sub_mail@mail.com", "waters")}
           >
             <ion-icon name="person"></ion-icon>
             <p>submitter</p>
@@ -253,6 +253,7 @@ class Login extends Component {
     // }
     let authRedirect = null;
     if (this.props.isAuthenticated) {
+      console.log('authed ', this.props.isAuthenticated)
       authRedirect = <Redirect to={"/home"} />;
     }
     let errorMessage = null;
